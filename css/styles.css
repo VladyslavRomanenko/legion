@@ -145,6 +145,11 @@ body {
   padding: 20px 0px;
   border-bottom: 1px solid white;
   background-color: #232420;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .logo {
@@ -419,7 +424,7 @@ body {
 
 @media screen and (min-width: 767.98px) {
   .hero-section {
-    padding: 300px 0px 300px;
+    padding: 250px 0px 250px;
   }
 
   .hero-upper-text {
@@ -438,9 +443,6 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  .hero-section {
-    padding: 400px 0px 400px;
-  }
   .hero-upper-text {
     font-size: 22px;
   }
