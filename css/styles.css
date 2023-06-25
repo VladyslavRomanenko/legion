@@ -674,66 +674,26 @@ body {
   color: white;
 }
 
-/* .footer-container {
+/* DONATE */
+
+.menu-donate {
+  font-size: 13px;
+}
+
+.logo-donate {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  position: relative;
-} */
-
-/* .contacts-footer {
-  width: 45%;
-  position: relative;
-  margin-bottom: 30px;
-} */
-
-/* .footer-contacts-title {
-  color: #f0e68c;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  position: absolute;
-  top: -40px;
-  left: 160px;
 }
 
-.footer-address {
-  display: flex;
-  gap: 50px;
-  align-items: baseline;
-}
-
-.contacts-number-email {
+.logo-list {
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  justify-content: center;
+  align-items: center;
 }
 
-.email-icon {
-  fill: #f0e68c;
-  position: absolute;
-  left: -33px;
-  top: -1px;
+.donate-section-details {
+  height: 500px;
+  background-color: #595c47;
 }
-
-.phone-icon {
-  fill: #f0e68c;
-  position: absolute;
-  left: -35px;
-  top: -1px;
-}
-
-.location-icon {
-  fill: #f0e68c;
-  position: absolute;
-  left: -33px;
-  top: -1px;
-}
-
-.author {
-  position: absolute;
-  color: white;
-  top: 150%;
-  left: 50%;
-  transform: translate(-50%);
-} */
