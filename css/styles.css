@@ -697,3 +697,10 @@ body {
   height: 500px;
   background-color: #595c47;
 }
+
+@media screen and (min-width: 767.98px) {
+  .logo-list {
+    flex-direction: row;
+    gap: 5px;
+  }
+}
