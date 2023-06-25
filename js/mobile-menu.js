@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector(".js-menu-container");
   const openMenuBtn = document.querySelector(".js-open-menu");
   const closeMenuBtn = document.querySelector(".js-close-menu");
+  const headerRef = document.querySelector("header");
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -31,3 +32,6 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+// ___________________________________
+
+// Отримуємо елемент шапки хедера

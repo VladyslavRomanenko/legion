@@ -141,12 +141,11 @@ body {
 
 /* =================== HEADER =================== */
 .page-header {
-  padding: 20px 0px;
+  padding: 10px 0px;
   background-color: #232420;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
+  top: 0;
   z-index: 1;
 }
 
@@ -263,8 +262,17 @@ body {
 .menu-address-link:focus {
   color: var(--green-color);
 }
+@media screen and (min-width: 480px) {
+  .page-header {
+    padding: 15px 0px;
+  }
+}
 
 @media screen and (min-width: 1024px) {
+  .page-header {
+    padding: 20px 0px;
+  }
+
   .burger-menu-btn {
     display: none;
   }
