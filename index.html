@@ -23,11 +23,11 @@
     <header class="page-header">
       <div class="container page-header-container">
         <a class="logo" href="./index.html"
-          >Легіон
-          <span class="logo-light-word">«Свої»</span>
-          <svg class="logo-icon" width="32" height="40">
+          ><svg class="logo-icon" width="32" height="40">
             <use href="./img/icons.svg#icon-logo"></use>
           </svg>
+          <span>Легіон</span>
+          <span class="logo-light-word">«Свої»</span>
         </a>
         <button
           class="burger-menu-btn js-open-menu"
@@ -137,10 +137,15 @@
       </section>
       <!-- =============== ABOUT ==================== -->
       <section id="about" class="section about-us">
+        <h1 class="is-hidden"></h1>
         <div class="container">
-          <h1 class="section-title">Про Легіон «свої»</h1>
           <div class="about-container">
             <div class="about-description">
+              <h1 class="section-title about-title">Про нас</h1>
+              <p class="about-text about-goal">
+                Основна наша мета - правовий юридичний захист та реабілітація
+                учасників бойових дій.
+              </p>
               <p class="about-text">
                 Громадська Організація «ЛЕГІОН «СВОЇ» створена в березні 2023
                 року. Організація є добровільним об'єднанням фізичних осіб,
@@ -158,10 +163,6 @@
                 Україні чи за її межами, громадянами України, іноземцями та
                 особами без громадянства.
               </p>
-              <p class="about-text about-goal">
-                Основна наша мета - правовий юридичний захист та реабілітація
-                учасників бойових дій.
-              </p>
             </div>
 
             <img
@@ -178,43 +179,56 @@
       <!-- ================ QUESTION  ==============-->
       <section class="question section">
         <div class="container">
-          <h1 class="section-title">Питання-Відповідь</h1>
+          <h1 class="section-title">Питання-відповідь</h1>
           <ul class="question-list">
             <li>
-              <h3 class="question-title">Кому ми допомагаємо?</h3>
-              <p class="answer-text">Учасникам бойових дій та їх сім'ям.</p>
+              <div class="question-list-box">
+                <p class="question-list-number">01</p>
+                <h3 class="question-title">Кому ми допомагаємо?</h3>
+                <p class="answer-text">Учасникам бойових дій та їх сім'ям.</p>
+              </div>
             </li>
             <li>
-              <h3 class="question-title">
-                Які основні завдання громадської організації?
-              </h3>
-              <p class="answer-text">
-                Правовий юридичний захист та реабілітація учасників бойових дій.
-              </p>
+              <div class="question-list-box">
+                <p class="question-list-number">02</p>
+                <h3 class="question-title">
+                  Які основні завдання громадської організації?
+                </h3>
+                <p class="answer-text">
+                  Правовий юридичний захист та реабілітація учасників бойових
+                  дій.
+                </p>
+              </div>
             </li>
             <li class="question-list-tem">
-              <h3 class="question-title">
-                Які додаткові напрямки громадської організації?
-              </h3>
-              <p class="answer-text">Медицина.</p>
-              <p class="answer-text">Освіта.</p>
+              <div class="question-list-box">
+                <p class="question-list-number">03</p>
+                <h3 class="question-title">
+                  Які додаткові напрямки громадської організації?
+                </h3>
+                <p class="answer-text">Медицина.</p>
+                <p class="answer-text">Освіта.</p>
+              </div>
             </li>
             <li class="question-list-tem">
-              <h3 class="question-title">Як звернутися за допомогою?</h3>
-              <p class="answer-text">
-                1. За номером телефону:
-                <a class="answer-text-link" href="tel:380672651272"
-                  >+38 067 265 12 72</a
-                >
-              </p>
-              <p class="answer-text">
-                2.Написати нам на пошту:
-                <a
-                  class="answer-text-link"
-                  href="mailto:po.legion.svoyi@gmail.com"
-                  >po.legion.svoyi@gmail.com</a
-                >
-              </p>
+              <div class="question-list-box">
+                <p class="question-list-number">04</p>
+                <h3 class="question-title">Як звернутися за допомогою?</h3>
+                <p class="answer-text">
+                  1. За номером телефону:
+                  <a class="answer-text-link" href="tel:380672651272"
+                    >+38 067 265 12 72</a
+                  >
+                </p>
+                <p class="answer-text">
+                  2.Написати нам на пошту:
+                  <a
+                    class="answer-text-link"
+                    href="mailto:po.legion.svoyi@gmail.com"
+                    >po.legion.svoyi@gmail.com</a
+                  >
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -343,21 +357,28 @@
 
       <!-- =========== DONATE ============== -->
       <section class="donate-section section">
-        <div class="container">
-          <h1 class="section-title donate-title">Допомога нашим землякам</h1>
-          <h2 class="donate-text">Кожен внесок важливий. Долучайтесь!</h2>
-          <a class="donate-link" href="donate.html" target="_blank"
-            >Зробити внесок</a
-          >
+        <div class="container donate-container">
+          <div class="donate-box">
+            <h1 class="section-title donate-title">Допомога нашим землякам</h1>
+            <h2 class="donate-text">Кожен внесок важливий. Долучайтесь!</h2>
+            <a class="donate-link" href="donate.html" target="_blank"
+              >Зробити внесок</a
+            >
+          </div>
+          <img
+            src="./img/flag.png"
+            alt="прапор України"
+            width="320"
+            height="320"
+            class="donate-img"
+          />
         </div>
       </section>
 
       <!--  ================ STATUT =======-->
-      <section class="section">
+      <section class="section section-statut">
         <div class="container">
-          <h1 class="section-title">
-            Статут громадської організації Легіон «Cвої»
-          </h1>
+          <h1 class="section-title">Статут ГО «Легіон «Cвої»</h1>
           <a class="statut-link" href="./pdf/STATUT.pdf" target="_blank"
             >Переглянути статут</a
           >

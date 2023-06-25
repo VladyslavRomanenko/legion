@@ -91,7 +91,7 @@ body {
   }
 
   .section {
-    padding: 80px 0px;
+    padding: 88px 0px;
   }
 }
 
@@ -109,7 +109,6 @@ body {
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--dark-color);
   margin-bottom: 30px;
 }
@@ -143,7 +142,6 @@ body {
 /* =================== HEADER =================== */
 .page-header {
   padding: 20px 0px;
-  border-bottom: 1px solid white;
   background-color: #232420;
   position: fixed;
   top: 0;
@@ -458,13 +456,16 @@ body {
 }
 
 /* ================ ABOUT ============== */
-
+.about-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .about-text {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  text-indent: 1.2em;
 }
 
 .about-goal {
@@ -492,6 +493,17 @@ body {
   }
 }
 
+@media screen and (min-width: 767.98px) {
+  .about-title {
+    text-align: start;
+    margin: 0;
+  }
+
+  .about-image {
+    margin: 0 auto;
+  }
+}
+
 /* ================ QUEATION-ANSWER ============= */
 .question {
   background-color: #e5e50e59;
@@ -500,7 +512,7 @@ body {
 .question-list {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 64px;
 }
 
 .question-list-tem {
@@ -509,9 +521,18 @@ body {
   gap: 10px;
 }
 
+.question-list-number {
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  width: 80px;
+  border-bottom: 1px solid #232420;
+  margin-bottom: 32px;
+  padding-bottom: 8px;
+}
+
 .question-title {
   margin-bottom: 10px;
-  text-decoration: underline;
 }
 
 .answer-text {
@@ -529,6 +550,27 @@ body {
   color: #595c47;
 }
 
+@media screen and (min-width: 767.98px) {
+  .question-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question-list-box {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .question-list-box {
+    width: 400px;
+  }
+}
+
 /* ============ COUNTRYMEN =============== */
 
 .countrymen-list {
@@ -543,11 +585,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  border: 1px solid rgba(110, 110, 110, 0.356);
   width: 330px;
   height: 370px;
   padding: 5px;
-  box-shadow: 2px 2px 2px rgb(135, 135, 135);
   background-color: white;
 }
 
@@ -574,6 +614,14 @@ body {
 /* =============  DONATE =========== */
 .donate-section {
   background-color: #595c47;
+}
+
+.donate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .donate-title {
@@ -606,7 +654,42 @@ body {
   color: #232420;
 }
 
+@media screen and (min-width: 767.98px) {
+  .donate-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .donate-box {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .donate-img {
+    width: 450px;
+    height: 450px;
+  }
+
+  .donate-title,
+  .donate-text {
+    text-align: left;
+  }
+
+  .donate-title {
+    font-size: 45px;
+  }
+
+  .donate-link {
+    margin: 0;
+  }
+}
+
 /*========================  STATUT =============== */
+
+.section-statut {
+  padding: 180px 0px;
+}
 
 .statut-link {
   display: block;
@@ -701,6 +784,6 @@ body {
 @media screen and (min-width: 767.98px) {
   .logo-list {
     flex-direction: row;
-    gap: 5px;
+    gap: 7px;
   }
 }
