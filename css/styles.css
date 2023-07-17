@@ -765,7 +765,7 @@ body {
   color: white;
 }
 
-/* DONATE */
+/* ================= DONATE =================== */
 
 .menu-donate {
   font-size: 13px;
@@ -785,13 +785,47 @@ body {
 }
 
 .donate-section-details {
-  height: 500px;
-  background-color: #595c47;
+  padding: 50px 0px;
+}
+
+.donate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate-title-second {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.donate-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.donate-row-title {
+  font-size: 15px;
+  color: #595c47;
+}
+
+.donate-row-text {
+  font-size: 19px;
+  font-weight: 500;
+  color: #232420;
 }
 
 @media screen and (min-width: 767.98px) {
   .logo-list {
     flex-direction: row;
     gap: 7px;
+  }
+
+  .donate-row-text {
+    font-size: 28px;
   }
 }
