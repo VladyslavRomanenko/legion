@@ -629,7 +629,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .donate-title {
@@ -654,12 +654,17 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: background-color 250ms linear, color 250ms linear;
+  margin-bottom: 30px;
 }
 
 .donate-link:hover,
 .donate-link:focus {
   background-color: white;
   color: #232420;
+}
+
+.donate-img {
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 767.98px) {
@@ -669,27 +674,33 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  .donate-box {
+  .donate-main-container {
     display: flex;
-    flex-direction: column;
-    gap: 28px;
-  }
-  .donate-img {
-    width: 450px;
-    height: 450px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
 
-  .donate-title,
-  .donate-text {
-    text-align: left;
+  .donate-box {
+    flex-direction: column;
+  }
+
+  .donate-img {
+    width: 300px;
+    height: 300px;
   }
 
   .donate-title {
     font-size: 45px;
+    text-align: left;
+  }
+
+  .donate-text {
+    text-align: left;
   }
 
   .donate-link {
-    margin: 0;
+    margin: 60px auto;
   }
 }
 
